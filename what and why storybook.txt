@@ -1,4 +1,5 @@
-What and why storybook?
+=> What and why storybook?
+
 1. A development environment and playground for UI components
 2. Create components independently
 3. Showcase those components interactively in an isolated development environment.
