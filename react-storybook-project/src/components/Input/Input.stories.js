@@ -10,6 +10,7 @@ export const Small = () => {
     return <Input size="small" placeholder="Small" />
 }
 
+Small.storyName = 'Small Input'
 
 export const Medium = () => {
     return <Input size="medium" placeholder="Medium" />
