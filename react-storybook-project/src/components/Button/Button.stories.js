@@ -3,7 +3,11 @@ import Button from './Button'
 
 export default {
     title: "Form/Button",
-    component: Button
+    component: Button,
+    // args at component level
+    args:{
+        children:"Button"
+    }
 }
 
 // named exports
@@ -19,12 +23,12 @@ const Template = args => <Button {...args} />
 export const PrimaryA = Template.bind({})
 PrimaryA.args = {
    variant:"primary",
-   children:"Primary Args"
+   // children:"Primary Args"
 }
 
 export const SecondaryA = Template.bind({})
 SecondaryA.args = {
     variant:"secondary",
-    children:"Secondary Args"
+    // children:"Secondary Args"
 }
 
