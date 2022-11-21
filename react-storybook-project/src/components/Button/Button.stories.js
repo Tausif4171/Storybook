@@ -26,6 +26,13 @@ PrimaryA.args = {
    // children:"Primary Args"
 }
 
+// reusing args of another stories
+export const LongPrimaryA = Template.bind({})
+LongPrimaryA.args ={
+    ...PrimaryA.args,
+    children:"LongPrimaryA"
+}
+
 export const SecondaryA = Template.bind({})
 SecondaryA.args = {
     variant:"secondary",
