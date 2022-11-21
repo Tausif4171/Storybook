@@ -5,8 +5,8 @@ export default {
     title: "Form/Button",
     component: Button,
     // args at component level
-    args:{
-        children:"Button"
+    args: {
+        children: "Button"
     }
 }
 
@@ -22,20 +22,20 @@ const Template = args => <Button {...args} />
 // stories of button component
 export const PrimaryA = Template.bind({})
 PrimaryA.args = {
-   variant:"primary",
-   // children:"Primary Args"
+    variant: "primary",
+    // children:"Primary Args"
 }
 
 // reusing args of another stories
 export const LongPrimaryA = Template.bind({})
-LongPrimaryA.args ={
+LongPrimaryA.args = {
     ...PrimaryA.args,
-    children:"LongPrimaryA"
+    children: "LongPrimaryA" // this children override the component level args
 }
 
 export const SecondaryA = Template.bind({})
 SecondaryA.args = {
-    variant:"secondary",
+    variant: "secondary",
     // children:"Secondary Args"
 }
 
