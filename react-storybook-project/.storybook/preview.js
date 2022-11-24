@@ -3,7 +3,7 @@ import { addDecorator } from "@storybook/react";
 import Center from "../src/components/Center/Center";
 import { ChakraProvider } from "@chakra-ui/react";
 
-addDecorator((story) => <ChakraProvider>{story()}</ChakraProvider>);
+addDecorator((story) => <ChakraProvider>{story()}</ChakraProvider>); // here addDecorator function is used to wrap all the stories of the component with a ChakraProvider theme.
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

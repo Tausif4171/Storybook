@@ -9,7 +9,7 @@ export default {
     args: {
         children: "Button"
     },
-    // decorators:[story => <Center>{story()}</Center>] // here decorators function is basically used to wrap the stories of the button component with a center component also for styling purpose it is also used.
+    // decorators:[story => <Center>{story()}</Center>] // here decorators function is basically used to wrap the stories of the button component with a center component.
 }
 
 // named exports
