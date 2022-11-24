@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from './Button'
+import Center from '../Center/Center'
 
 export default {
     title: "Form/Button",
@@ -7,12 +8,13 @@ export default {
     // args at component level
     args: {
         children: "Button"
-    }
+    },
+    decorators:[story => <Center>{story()}</Center>] // here decorators is basically used to wrap the stories of the button component with a center component
 }
 
 // named exports
 // stories of button component
-export const Primary = () => <Button variant='primary'>Primary</Button>
+export const Primary = () =><Button variant='primary'>Primary</Button>
 export const Secondary = () => <Button variant='secondary'>Secondary</Button>
 export const Success = () => <Button variant='success'>Success</Button>
 export const Danger = () => <Button variant='danger'>Danger</Button>
